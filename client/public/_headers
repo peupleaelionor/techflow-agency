@@ -1,0 +1,29 @@
+## Headers de sécurité pour tous les fichiers
+
+/*
+  # Sécurité de base
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Content Security Policy (CSP)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://static.hotjar.com https://cdn.emailjs.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://api.emailjs.com; frame-ancestors 'none';
+  
+  # Permissions Policy
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  
+  # Cache Control pour les assets
+  Cache-Control: public, max-age=31536000, immutable
+
+# Headers spécifiques pour les images
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+# Headers pour les fichiers HTML
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Headers pour le service worker (si ajouté plus tard)
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate

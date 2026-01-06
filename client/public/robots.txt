@@ -1,0 +1,15 @@
+# robots.txt pour TechFlow Solutions
+
+User-agent: *
+Allow: /
+
+# Sitemap (à créer et héberger)
+Sitemap: https://www.techflow-solutions.com/sitemap.xml
+
+# Bloquer les fichiers sensibles
+Disallow: /admin/
+Disallow: /.env
+Disallow: /config/
+
+# Optimisation du crawl
+Crawl-delay: 1
