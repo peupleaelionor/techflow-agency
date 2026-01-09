@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "LOKASA",
+    "method": "NDENGE YA BISO",
+    "services": "MISALA",
+    "portfolio": "MISALA YA LIBOSO",
+    "insights": "MAYELE",
+    "contact": "KONTAKTI",
+    "consultation": "KONSULTASYON LOKOLA ELEKO"
+  },
+  "hero": {
+    "title": "OFISI YA DIGITAL V2.0",
+    "subtitle": "MISALA YA DIGITAL YA NDENGE MOKO PARA NA MIPROJEE YA LIKAMBO MONENE.",
+    "description": "Lisanga lya biso ya mayele na Paris, Londres, Bordeaux, Madrid, New York, Miami, México, Buenos Aires, Kinshasa, Tokyo, Seoul, Shanghai mpe Singapore ebongisaka mayele na yo na ndenge ya totela.",
+    "cta": "KOMENSA SIKA →",
+    "cta2": "KOLOBA NA BISO"
+  },
+  "offers": {
+    "title": "MISALA YA BISO",
+    "projects": "MIPROJEE (MOKO)",
+    "partnerships": "BOYOKANI (MOLONGO)",
+    "essential": {
+      "name": "Essential",
+      "subtitle": "Komesa Mabele mpe Makasi",
+      "price": "€3.500 HT",
+      "features": [
+        "Site (1-5 page)",
+        "Design Premium mpe Responsive",
+        "Optimization SEO ya Liboso",
+        "Formulaire de Kontakti",
+        "Livrason na mikolo 2"
+      ],
+      "cta": "PONA PLAN OYO"
+    },
+    "scale": {
+      "name": "Scale",
+      "subtitle": "Kokoma mpe E-commerce",
+      "price": "€7.500 HT",
+      "badge": "POPULAIRE",
+      "features": [
+        "Site E-commerce / App Web",
+        "CMS ya Ndenge Moko",
+        "Automations ya Marketing",
+        "SEO Monene mpe Analytics",
+        "Eyebisano ya Equipe"
+      ],
+      "cta": "PONA PLAN OYO"
+    },
+    "custom": {
+      "name": "Custom",
+      "subtitle": "Innovation mpe Ndenge Moko",
+      "price": "Na Devis",
+      "features": [
+        "Architecture Monene",
+        "Integrations API Spesifike",
+        "Sisteme Design Mobimba",
+        "Audit Securite",
+        "Soutien Strategique"
+      ],
+      "cta": "KONTAKTI"
+    }
+  },
+  "cta": {
+    "ready": "Oyebi na yo kosala misala na yo?",
+    "subtitle": "Tika te koyebisa na yo. Koma na lisanga ya digital na TechFlow.",
+    "button": "PONA AUDIT YA BISO →"
+  },
+  "footer": {
+    "company": "TECHFLOW",
+    "locations": "Paris • Londres • Bordeaux • Madrid • New York • Miami • México • Buenos Aires • Kinshasa • Tokyo • Seoul • Shanghai • Singapore",
+    "email_fr": "Techflow@outlook.fr",
+    "email_es": "hola@techflow.es",
+    "legal": "Likambo ya Mobeko",
+    "privacy": "Confidentialite",
+    "follow": "Suka biso"
+  }
+}

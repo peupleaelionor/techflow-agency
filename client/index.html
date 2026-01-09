@@ -28,6 +28,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    
+    <!-- Performance Optimizations -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/spacegrotesk/v16/V8mQoQDjQikL0jVgUVAZYeSWxvCQw3jH.woff2" crossorigin />
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flIEm7go3QhxqIwELm-_O6--_oS8P.woff2" crossorigin />
 
     <!-- Tracking Placeholders (Commented out for production readiness) -->
     <!-- 
@@ -61,6 +67,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Preload critical resources
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+          const link = document.createElement('link');
+          link.rel = 'prefetch';
+          link.href = '/src/pages';
+          document.head.appendChild(link);
+        });
+      }
+    </script>
     <script
       defer
       src="%VITE_ANALYTICS_ENDPOINT%/umami"

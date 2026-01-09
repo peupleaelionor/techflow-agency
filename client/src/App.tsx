@@ -5,40 +5,51 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-import Method from "./pages/Method";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
-import Confirmation from "./pages/Confirmation";
-import Legal from "./pages/Legal";
-import Results from "./pages/Results";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import CaseStudies from "./pages/CaseStudies";
-import Insights from "./pages/Insights";
-import InsightDetail from "./pages/InsightDetail";
-import ContentCalendar from "./pages/ContentCalendar";
-import Portfolio from "./pages/Portfolio";
+import { lazy, Suspense } from "react";
 
+// Lazy load non-critical pages
+const Method = lazy(() => import("./pages/Method"));
+const About = lazy(() => import("./pages/About"));
+const Services = lazy(() => import("./pages/Services"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Confirmation = lazy(() => import("./pages/Confirmation"));
+const Legal = lazy(() => import("./pages/Legal"));
+const Results = lazy(() => import("./pages/Results"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+const Insights = lazy(() => import("./pages/Insights"));
+const InsightDetail = lazy(() => import("./pages/InsightDetail"));
+const ContentCalendar = lazy(() => import("./pages/ContentCalendar"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-screen bg-white">
+    <div className="text-center">
+      <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#CCFF00]"></div>
+      <p className="mt-4 text-gray-600">Chargement...</p>
+    </div>
+  </div>
+);
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
-      <Route path={"/method"} component={Method} />
-      <Route path={"/about"} component={About} />
-      <Route path={"/services"} component={Services} />
-      <Route path={"/contact"} component={Contact} />
-      <Route path="/confirmation" component={Confirmation} />
-      <Route path="/legal" component={Legal} />
-      <Route path={"/results"} component={Results} />
-      <Route path={"/blog"} component={Blog} />
-      <Route path={"/blog/:id"} component={BlogPost} />
-      <Route path={"/case-studies"} component={CaseStudies} />
-      <Route path={"/insights"} component={Insights} />
-      <Route path={"/insights/:id"} component={InsightDetail} />
-      <Route path={"/content-calendar"} component={ContentCalendar} />
-      <Route path={"/portfolio"} component={Portfolio} />
+      <Route path={"/method"} component={() => <Suspense fallback={<LoadingFallback />}><Method /></Suspense>} />
+      <Route path={"/about"} component={() => <Suspense fallback={<LoadingFallback />}><About /></Suspense>} />
+      <Route path={"/services"} component={() => <Suspense fallback={<LoadingFallback />}><Services /></Suspense>} />
+      <Route path={"/contact"} component={() => <Suspense fallback={<LoadingFallback />}><Contact /></Suspense>} />
+      <Route path="/confirmation" component={() => <Suspense fallback={<LoadingFallback />}><Confirmation /></Suspense>} />
+      <Route path="/legal" component={() => <Suspense fallback={<LoadingFallback />}><Legal /></Suspense>} />
+      <Route path={"/results"} component={() => <Suspense fallback={<LoadingFallback />}><Results /></Suspense>} />
+      <Route path={"/blog"} component={() => <Suspense fallback={<LoadingFallback />}><Blog /></Suspense>} />
+      <Route path={"/blog/:id"} component={() => <Suspense fallback={<LoadingFallback />}><BlogPost /></Suspense>} />
+      <Route path={"/case-studies"} component={() => <Suspense fallback={<LoadingFallback />}><CaseStudies /></Suspense>} />
+      <Route path={"/insights"} component={() => <Suspense fallback={<LoadingFallback />}><Insights /></Suspense>} />
+      <Route path={"/insights/:id"} component={() => <Suspense fallback={<LoadingFallback />}><InsightDetail /></Suspense>} />
+      <Route path={"/content-calendar"} component={() => <Suspense fallback={<LoadingFallback />}><ContentCalendar /></Suspense>} />
+      <Route path={"/portfolio"} component={() => <Suspense fallback={<LoadingFallback />}><Portfolio /></Suspense>} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

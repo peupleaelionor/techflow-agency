@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "HOME",
+    "method": "OUR METHOD",
+    "services": "SERVICES",
+    "portfolio": "PORTFOLIO",
+    "insights": "INSIGHTS",
+    "contact": "CONTACT",
+    "consultation": "FREE CONSULTATION"
+  },
+  "hero": {
+    "title": "DIGITAL AGENCY V2.0",
+    "subtitle": "CUSTOM DIGITAL SERVICES FOR AMBITIOUS PROJECTS.",
+    "description": "Our global network of experts in Paris, London, Bordeaux, Madrid, New York, Miami, México, Buenos Aires, Kinshasa, Tokyo, Seoul, Shanghai and Singapore transforms your ideas into reality with absolute rigor.",
+    "cta": "START NOW →",
+    "cta2": "DISCUSS WITH US"
+  },
+  "offers": {
+    "title": "OUR OFFERS",
+    "projects": "PROJECTS (ONE-SHOT)",
+    "partnerships": "PARTNERSHIPS (LONG TERM)",
+    "essential": {
+      "name": "Essential",
+      "subtitle": "Quick & Effective Launch",
+      "price": "€3,500 HT",
+      "features": [
+        "Website (1-5 pages)",
+        "Premium & Responsive Design",
+        "Basic SEO Optimization",
+        "Contact Form",
+        "Delivery in 2 weeks"
+      ],
+      "cta": "CHOOSE THIS PLAN"
+    },
+    "scale": {
+      "name": "Scale",
+      "subtitle": "Growth & E-commerce",
+      "price": "€7,500 HT",
+      "badge": "POPULAR",
+      "features": [
+        "E-commerce Site / Web App",
+        "Custom CMS",
+        "Marketing Automations",
+        "Advanced SEO & Analytics",
+        "Team Training Included"
+      ],
+      "cta": "CHOOSE THIS PLAN"
+    },
+    "custom": {
+      "name": "Custom",
+      "subtitle": "Innovation & Bespoke",
+      "price": "On Quote",
+      "features": [
+        "Complex Architecture",
+        "Specific API Integrations",
+        "Complete Design System",
+        "Security Audit",
+        "Strategic Support"
+      ],
+      "cta": "CONTACT US"
+    }
+  },
+  "cta": {
+    "ready": "Ready to transform your business?",
+    "subtitle": "Don't let your company stagnate. Join the digital elite with TechFlow.",
+    "button": "GET MY FREE AUDIT →"
+  },
+  "footer": {
+    "company": "TECHFLOW",
+    "locations": "Paris • London • Bordeaux • Madrid • New York • Miami • México • Buenos Aires • Kinshasa • Tokyo • Seoul • Shanghai • Singapore",
+    "email_fr": "Techflow@outlook.fr",
+    "email_es": "hola@techflow.es",
+    "legal": "Legal Notice",
+    "privacy": "Privacy",
+    "follow": "Follow us"
+  }
+}
