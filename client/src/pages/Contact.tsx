@@ -99,6 +99,9 @@ export default function Contact() {
         await new Promise(resolve => setTimeout(resolve, 1000));
       }
       
+      // Scroll vers le haut de la page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      
       // Redirection vers la page de confirmation
       setLocation("/confirmation");
       
