@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "INÍCIO",
+    "method": "NOSSO MÉTODO",
+    "services": "SERVIÇOS",
+    "portfolio": "PORTFÓLIO",
+    "insights": "INSIGHTS",
+    "contact": "CONTATO",
+    "consultation": "CONSULTA GRATUITA"
+  },
+  "hero": {
+    "title": "AGÊNCIA DIGITAL V2.0",
+    "subtitle": "SERVIÇOS DIGITAIS PERSONALIZADOS PARA PROJETOS AMBICIOSOS.",
+    "description": "Nossa rede global de especialistas em Paris, Londres, Bordeaux, Madrid, Nova York, Miami, México, Buenos Aires, Kinshasa, Tóquio, Seul, Xangai e Singapura transforma suas ideias em realidade com rigor absoluto.",
+    "cta": "COMEÇAR AGORA →",
+    "cta2": "CONVERSAR CONOSCO"
+  },
+  "offers": {
+    "title": "NOSSAS OFERTAS",
+    "projects": "PROJETOS (ÚNICO)",
+    "partnerships": "PARCERIAS (LONGO PRAZO)",
+    "essential": {
+      "name": "Essential",
+      "subtitle": "Lançamento Rápido e Eficaz",
+      "price": "€3.500 HT",
+      "features": [
+        "Site (1-5 páginas)",
+        "Design Premium e Responsivo",
+        "Otimização SEO Básica",
+        "Formulário de Contato",
+        "Entrega em 2 semanas"
+      ],
+      "cta": "ESCOLHER ESTE PLANO"
+    },
+    "scale": {
+      "name": "Scale",
+      "subtitle": "Crescimento e E-commerce",
+      "price": "€7.500 HT",
+      "badge": "POPULAR",
+      "features": [
+        "Site E-commerce / App Web",
+        "CMS Personalizado",
+        "Automações de Marketing",
+        "SEO Avançado e Analytics",
+        "Treinamento de Equipe Incluído"
+      ],
+      "cta": "ESCOLHER ESTE PLANO"
+    },
+    "custom": {
+      "name": "Custom",
+      "subtitle": "Inovação e Personalizado",
+      "price": "Sob Orçamento",
+      "features": [
+        "Arquitetura Complexa",
+        "Integrações API Específicas",
+        "Sistema de Design Completo",
+        "Auditoria de Segurança",
+        "Suporte Estratégico"
+      ],
+      "cta": "CONTATAR"
+    }
+  },
+  "cta": {
+    "ready": "Pronto para transformar seu negócio?",
+    "subtitle": "Não deixe sua empresa estagnar. Junte-se à elite digital com TechFlow.",
+    "button": "OBTER MEU AUDIT GRATUITO →"
+  },
+  "footer": {
+    "company": "TECHFLOW",
+    "locations": "Paris • Londres • Bordeaux • Madrid • Nova York • Miami • México • Buenos Aires • Kinshasa • Tóquio • Seul • Xangai • Singapura",
+    "email_fr": "Techflow@outlook.fr",
+    "email_es": "hola@techflow.es",
+    "legal": "Aviso Legal",
+    "privacy": "Privacidade",
+    "follow": "Nos siga"
+  }
+}
