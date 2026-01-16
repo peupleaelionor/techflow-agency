@@ -55,7 +55,7 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} TechFlow Solutions. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/legal"><span className="hover:text-[#CCFF00] cursor-pointer">Mentions Légales</span></Link>
-            <a href="#" className="hover:text-[#CCFF00]">Confidentialité</a>
+            <Link href="/legal"><span className="hover:text-[#CCFF00] cursor-pointer">Confidentialité</span></Link>
           </div>
         </div>
       </div>
