@@ -1,0 +1,59 @@
+[build]
+  command = "pnpm run build"
+  publish = "dist/public"
+  functions = "dist/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+  PNPM_VERSION = "10"
+
+# Cache headers for static assets
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache CSS and JS files for 1 year
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache fonts for 1 year
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "font/woff2"
+
+# HTML files - no cache
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Enable gzip compression
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Encoding = "gzip"
+
+# Redirect all routes to index.html for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Performance optimizations
+[context.production.environment]
+  VITE_ANALYTICS_ENDPOINT = "https://analytics.techflow.ai"
+
+# Preload critical resources
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Link = "</assets/vendor.js>; rel=preload; as=script, </assets/ui.js>; rel=preload; as=script"

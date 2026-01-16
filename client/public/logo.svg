@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
+  <!-- Background for visibility check (optional, can be removed) -->
+  <!-- <rect width="400" height="100" fill="#111111"/> -->
+  
+  <!-- Icon Part: Abstract T/F Monogram in Neo-Brutalist style -->
+  <g transform="translate(20, 10)">
+    <!-- Main block -->
+    <rect x="0" y="0" width="80" height="80" fill="#CCFF00" stroke="#111111" stroke-width="4"/>
+    <!-- Inner geometric shapes suggesting flow/tech -->
+    <path d="M20 20 H60 V35 H35 V60 H20 V20Z" fill="#111111"/>
+    <rect x="45" y="45" width="15" height="15" fill="#111111"/>
+  </g>
+  
+  <!-- Text Part -->
+  <text x="120" y="65" font-family="Space Grotesk, sans-serif" font-weight="bold" font-size="48" fill="#111111" letter-spacing="-1">
+    TECHFLOW
+  </text>
+  <text x="355" y="65" font-family="JetBrains Mono, monospace" font-weight="normal" font-size="48" fill="#CCFF00" stroke="#111111" stroke-width="1.5">
+    _
+  </text>
+</svg>

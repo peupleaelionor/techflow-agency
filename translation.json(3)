@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "ACCUEIL",
+    "method": "NOTRE MÉTHODE",
+    "services": "SERVICES",
+    "portfolio": "PORTFOLIO",
+    "insights": "INSIGHTS",
+    "contact": "CONTACT",
+    "consultation": "CONSULTATION GRATUITE"
+  },
+  "hero": {
+    "badge": "AGENCE DIGITALE V2.0",
+    "title": "Des services digitaux",
+    "titleHighlight": "sur-mesure",
+    "titleEnd": "pour les projets ambitieux.",
+    "description": "Notre réseau mondial d'experts à Paris, Londres, New York, Tokyo, Séoul, Shanghai et dans 13 autres métropoles transforme vos idées en réalité avec une exigence absolue.",
+    "cta": "COMMENCER MAINTENANT →",
+    "chat": "DISCUTER AVEC NOUS",
+    "audit": "📋 OBTENIR MON AUDIT GRATUIT"
+  },
+  "services": {
+    "title": "NOS SERVICES",
+    "webDev": {
+      "title": "DÉVELOPPEMENT WEB",
+      "description": "Sites et applications intelligents conçus pour la performance et l'automatisation de vos processus."
+    },
+    "design": {
+      "title": "DESIGN UI/UX & BRANDING",
+      "description": "Interfaces centrées utilisateur conçues pour maximiser l'engagement et la conversion."
+    },
+    "strategy": {
+      "title": "STRATÉGIE DIGITALE",
+      "description": "Audits complets et feuilles de route pour placer l'innovation au cœur de votre croissance."
+    },
+    "seo": {
+      "title": "SEO & MARKETING",
+      "description": "Stratégies de contenu et optimisation SEO avancées pour dominer votre marché."
+    }
+  },
+  "pricing": {
+    "title": "NOS OFFRES",
+    "projects": "PROJETS (ONE-SHOT)",
+    "partnerships": "PARTENARIATS (LONG TERME)",
+    "popular": "POPULAIRE",
+    "essential": {
+      "title": "Essential",
+      "subtitle": "Lancement rapide & efficace",
+      "price": "3 500€",
+      "priceUnit": "HT",
+      "features": [
+        "Site Vitrine (1-5 pages)",
+        "Design Premium & Responsive",
+        "Optimisation SEO de base",
+        "Formulaire de contact",
+        "Livraison sous 2 semaines"
+      ],
+      "cta": "CHOISIR CE PACK"
+    },
+    "scale": {
+      "title": "Scale",
+      "subtitle": "Croissance & E-commerce",
+      "price": "7 500€",
+      "priceUnit": "HT",
+      "features": [
+        "Site E-commerce / App Web",
+        "CMS sur-mesure",
+        "Automatisations Marketing",
+        "SEO Avancé & Analytics",
+        "Formation équipe incluse"
+      ],
+      "cta": "CHOISIR CE PACK"
+    },
+    "custom": {
+      "title": "Custom",
+      "subtitle": "Innovation & Sur-mesure",
+      "price": "Sur Devis",
+      "features": [
+        "Architecture complexe",
+        "Intégrations API spécifiques",
+        "Design System complet",
+        "Audit de sécurité",
+        "Accompagnement stratégique"
+      ],
+      "cta": "NOUS CONTACTER"
+    }
+  },
+  "testimonials": {
+    "title": "NOS CLIENTS NOUS FONT CONFIANCE",
+    "subtitle": "Découvrez comment nous avons transformé les businesses de nos partenaires."
+  },
+  "cta": {
+    "title": "Prêt à transformer votre business ?",
+    "subtitle": "Ne laissez pas votre entreprise stagner. Rejoignez l'élite digitale avec TechFlow.",
+    "button": "OBTENIR MON AUDIT GRATUIT →"
+  },
+  "newsletter": {
+    "title": "Restez informé",
+    "placeholder": "votre@email.com",
+    "subscribe": "S'ABONNER",
+    "articles": "Articles & Insights",
+    "articlesDesc": "Les derniers articles techniques et analyses",
+    "caseStudies": "Cas d'Études",
+    "caseStudiesDesc": "Résultats concrets et retours d'expérience",
+    "offers": "Offres Spéciales",
+    "offersDesc": "Promotions et réductions exclusives",
+    "updates": "Mises à Jour Produit",
+    "updatesDesc": "Nouvelles fonctionnalités et améliorations"
+  },
+  "footer": {
+    "home": "Accueil",
+    "method": "Notre Méthode",
+    "services": "Services",
+    "resources": "Ressources",
+    "contact": "Nous contacter",
+    "legal": "Mentions Légales",
+    "privacy": "Confidentialité"
+  },
+  "contact": {
+    "title": "CONTACTEZ-NOUS",
+    "subtitle": "Parlons de votre projet",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "project": "Type de projet",
+    "budget": "Budget",
+    "timeline": "Délai",
+    "message": "Message",
+    "submit": "ENVOYER",
+    "offices": "NOS BUREAUX",
+    "paris": "Paris, France",
+    "madrid": "Madrid, Espagne",
+    "mexico": "Mexico, Mexique"
+  },
+  "calendar": {
+    "title": "STRATÉGIE DE CONTENU HEBDOMADAIRE",
+    "viewFull": "VOIR LE CALENDRIER COMPLET"
+  },
+  "marquee": {
+    "webDev": "DEVELOPPEMENT WEB",
+    "design": "DESIGN UI/UX",
+    "strategy": "STRATEGIE DIGITALE",
+    "seo": "SEO & MARKETING"
+  }
+}
