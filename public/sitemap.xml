@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- French Pages -->
+  <url>
+    <loc>https://techflow-agency.vercel.app/fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://techflow-agency.vercel.app/fr/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en/services" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es/services" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt/services" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln/services" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://techflow-agency.vercel.app/fr/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es/portfolio" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln/portfolio" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://techflow-agency.vercel.app/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es/contact" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt/contact" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln/contact" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://techflow-agency.vercel.app/fr/insights</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en/insights" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es/insights" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt/insights" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln/insights" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://techflow-agency.vercel.app/en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://techflow-agency.vercel.app/fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Spanish Pages -->
+  <url>
+    <loc>https://techflow-agency.vercel.app/es</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://techflow-agency.vercel.app/fr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Portuguese Pages -->
+  <url>
+    <loc>https://techflow-agency.vercel.app/pt</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://techflow-agency.vercel.app/fr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es" />
+    <xhtml:link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Lingala Pages -->
+  <url>
+    <loc>https://techflow-agency.vercel.app/ln</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://techflow-agency.vercel.app/fr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://techflow-agency.vercel.app/en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://techflow-agency.vercel.app/es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://techflow-agency.vercel.app/pt" />
+    <lastmod>2026-01-16</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>

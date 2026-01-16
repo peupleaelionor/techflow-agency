@@ -32,15 +32,41 @@
     <link rel="alternate" hreflang="ln" href="https://techflow-agency.vercel.app/ln" />
     <link rel="alternate" hreflang="x-default" href="https://techflow-agency.vercel.app/" />
 
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "TechFlow - Agence Digitale & Stratégie de Croissance",
+      "description": "Transformez votre business avec une stratégie digitale sur-mesure. Sites web haute-performance, automatisation intelligente et résultats mesurables.",
+      "url": "https://techflow-agency.vercel.app",
+      "email": "Techflow@outlook.fr",
+      "areaServed": ["FR", "ES", "UK", "US", "MX", "AR", "CD", "JP", "KR", "CN", "SG"],
+      "knowsAbout": ["Web Development", "UI/UX Design", "Digital Strategy", "SEO Marketing"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150"
+      }
+    }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 
-    <!-- Tracking Placeholders (Commented out for production readiness) -->
-    <!-- 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
     <script>
-      // Facebook Pixel Code Placeholder
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // gtag('config', 'YOUR_GA_ID'); // Replace with your GA ID
+    </script>
+
+    <!-- Facebook Pixel -->
+    <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
       if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -48,21 +74,10 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      // fbq('init', 'YOUR_PIXEL_ID');
+      // fbq('init', 'YOUR_PIXEL_ID'); // Replace with your Pixel ID
       // fbq('track', 'PageView');
     </script>
-    -->
-    
-    <!-- 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
-    <script>
-      // Google Analytics Placeholder
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      // gtag('config', 'YOUR_GA_ID');
-    </script>
-    -->
+
 
   </head>
 

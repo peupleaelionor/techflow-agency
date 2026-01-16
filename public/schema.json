@@ -1,0 +1,176 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TechFlow - Agence Digitale & Stratégie de Croissance",
+  "description": "Transformez votre business avec une stratégie digitale sur-mesure. Sites web haute-performance, automatisation intelligente et résultats mesurables pour maximiser votre ROI.",
+  "url": "https://techflow-agency.vercel.app",
+  "telephone": "+33 1 XX XX XX XX",
+  "email": "Techflow@outlook.fr",
+  "image": "https://techflow-agency.vercel.app/images/hero-bg.jpg",
+  "logo": "https://techflow-agency.vercel.app/images/logo.png",
+  "priceRange": "€€",
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "France"
+    },
+    {
+      "@type": "Country",
+      "name": "Spain"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "Mexico"
+    },
+    {
+      "@type": "Country",
+      "name": "Argentina"
+    },
+    {
+      "@type": "Country",
+      "name": "Democratic Republic of the Congo"
+    },
+    {
+      "@type": "Country",
+      "name": "Japan"
+    },
+    {
+      "@type": "Country",
+      "name": "South Korea"
+    },
+    {
+      "@type": "Country",
+      "name": "China"
+    },
+    {
+      "@type": "Country",
+      "name": "Singapore"
+    }
+  ],
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Paris",
+      "addressCountry": "FR"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "London",
+      "addressCountry": "UK"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Bordeaux",
+      "addressCountry": "FR"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Madrid",
+      "addressCountry": "ES"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "New York",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Miami",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Mexico City",
+      "addressCountry": "MX"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Kinshasa",
+      "addressCountry": "CD"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Tokyo",
+      "addressCountry": "JP"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Seoul",
+      "addressCountry": "KR"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Shanghai",
+      "addressCountry": "CN"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Singapore",
+      "addressCountry": "SG"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/techflow",
+    "https://www.instagram.com/techflow",
+    "https://www.twitter.com/techflow",
+    "https://www.tiktok.com/@techflow"
+  ],
+  "knowsAbout": [
+    "Web Development",
+    "UI/UX Design",
+    "Digital Strategy",
+    "SEO Marketing",
+    "E-commerce Solutions",
+    "Growth Hacking",
+    "Digital Transformation"
+  ],
+  "serviceArea": {
+    "@type": "GeoShape",
+    "box": "-90,-180 90,180"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "TechFlow Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Web Development",
+        "description": "Custom web development solutions",
+        "price": "2000",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "name": "UI/UX Design",
+        "description": "Professional design services",
+        "price": "1500",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "name": "Digital Strategy",
+        "description": "Comprehensive digital strategy consulting",
+        "price": "5000",
+        "priceCurrency": "EUR"
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "150"
+  }
+}
