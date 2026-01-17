@@ -95,12 +95,10 @@ export default function Confirmation() {
           </div>
           <div className="p-3 border-t-2 border-gray-200 bg-white">
             <a 
-              href="https://wa.me/33123456789?text=Bonjour,%20je%20viens%20de%20soumettre%20le%20formulaire.%20Le%20plus%20urgent%20pour%20moi%20c'est..." 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="mailto:contact@techflowsolutions.space?subject=Réponse à votre audit TechFlow" 
               className="block w-full bg-[#CCFF00] text-black text-center py-2 font-bold uppercase text-sm border-2 border-black hover:bg-black hover:text-[#CCFF00] transition-colors"
             >
-              Répondre sur WhatsApp →
+              Répondre par email →
             </a>
           </div>
         </div>

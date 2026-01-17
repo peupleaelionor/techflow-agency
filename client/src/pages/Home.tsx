@@ -42,13 +42,11 @@ export default function Home() {
                     </button>
                   </Link>
                   <a 
-                    href="https://wa.me/33123456789?text=Bonjour,%20je%20viens%20de%20voir%20TechFlow%20et%20je%20suis%20intéressé%20par%20un%20projet.%20Pouvez-vous%20m'en%20dire%20plus%20?" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                    href="mailto:contact@techflowsolutions.space?subject=Demande de projet TechFlow" 
                     className="flex items-center gap-2 text-black dark:text-white font-bold uppercase hover:text-[#CCFF00] transition-colors border-b-2 border-transparent hover:border-[#CCFF00] pb-1"
                   >
                     <MessageCircle size={24} />
-                    Discuter avec nous
+                    Nous écrire
                   </a>
                 </div>
               </Reveal>
