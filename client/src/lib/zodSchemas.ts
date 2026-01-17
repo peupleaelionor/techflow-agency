@@ -1,6 +1,24 @@
 import { z } from "zod";
 
 /**
+ * Sources d'entrée (UTM tracking)
+ */
+export const LEAD_SOURCES = [
+  "google-ads",
+  "tiktok-ads",
+  "facebook-ads",
+  "instagram-ads",
+  "organic",
+  "direct",
+  "mini-mission",
+  "referral",
+  "email",
+  "other",
+] as const;
+
+export type LeadSource = (typeof LEAD_SOURCES)[number];
+
+/**
  * Schema de validation pour les leads
  * Utilisé côté client ET serveur
  */
@@ -13,6 +31,8 @@ export const LeadSchema = z.object({
     message: "Budget requis",
   }),
   message: z.string().min(10, "Message trop court (min 10 caractères)"),
+  // Source tracking (UTM param)
+  source: z.enum(LEAD_SOURCES).optional().or(z.literal("")),
   // Anti-spam honeypot
   company_website: z.string().optional().or(z.literal("")),
 });

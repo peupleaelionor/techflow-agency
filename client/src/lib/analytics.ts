@@ -12,9 +12,31 @@ type AnalyticsEvent =
   | "contact_form_success"
   | "contact_form_error"
   | "scroll_50"
-  | "scroll_90";
+  | "scroll_90"
+  | "lead_source_detected";
 
 type Props = Record<string, unknown>;
+
+/**
+ * Détecter la source du lead depuis les query params
+ */
+export function detectLeadSource(): string | null {
+  if (typeof window === "undefined") return null;
+  
+  const params = new URLSearchParams(window.location.search);
+  
+  // Check pour source directe
+  const source = params.get("source") 
+    || params.get("utm_source") 
+    || params.get("utm_medium")
+    || null;
+  
+  if (source) {
+    track("lead_source_detected", { source });
+  }
+  
+  return source;
+}
 
 /**
  * Track un événement

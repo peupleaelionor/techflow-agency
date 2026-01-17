@@ -1,10 +1,11 @@
 /**
  * Formulaire Contact
  * Validation Zod complète, anti-spam honeypot, envoi Resend, feedback UX
+ * Supporte source tracking (UTM params)
  */
 
 import { useEffect, useMemo, useState } from "react";
-import { LeadSchema, BUDGET_OPTIONS, PROJECT_OPTIONS } from "@/lib/zodSchemas";
+import { LeadSchema, BUDGET_OPTIONS, PROJECT_OPTIONS, LEAD_SOURCES } from "@/lib/zodSchemas";
 import { track } from "@/lib/analytics";
 import { AlertCircle, CheckCircle } from "lucide-react";
 
@@ -13,15 +14,19 @@ interface FormErrors {
 }
 
 export default function ContactForm() {
-  // Récupérer le projet pré-rempli depuis le query param
-  const prefillProject = useMemo(() => {
-    if (typeof window === "undefined") return null;
+  // Récupérer les query params (project, source, utm_*, etc)
+  const { prefillProject, prefillSource } = useMemo(() => {
+    if (typeof window === "undefined") return { prefillProject: null, prefillSource: null };
     const params = new URLSearchParams(window.location.search);
+    
     const p = params.get("project");
-    if (!p) return null;
-    const decoded = decodeURIComponent(p);
-    // Vérifier que c'est une option valide
-    return PROJECT_OPTIONS.includes(decoded as any) ? decoded : null;
+    const project = p && PROJECT_OPTIONS.includes(decodeURIComponent(p) as any) 
+      ? decodeURIComponent(p) 
+      : null;
+    
+    const source = params.get("source") || params.get("utm_source") || null;
+    
+    return { prefillProject: project, prefillSource: source };
   }, []);
 
   const [form, setForm] = useState({
@@ -31,6 +36,7 @@ export default function ContactForm() {
     projectType: prefillProject || "",
     budget: "<300" as const,
     message: "",
+    source: prefillSource || "",
     company_website: "", // honeypot
   });
 
@@ -109,6 +115,7 @@ export default function ContactForm() {
         projectType: "",
         budget: "<300",
         message: "",
+        source: prefillSource || "",
         company_website: "",
       });
 
@@ -283,6 +290,13 @@ export default function ContactForm() {
           </p>
         )}
       </div>
+
+      {/* Source (hidden field) */}
+      <input
+        type="hidden"
+        name="source"
+        value={form.source}
+      />
 
       {/* Message */}
       <div>

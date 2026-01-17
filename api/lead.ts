@@ -94,7 +94,7 @@ export default async function handler(
     const resend = new Resend(RESEND_API_KEY);
 
     // Construire le sujet structuré
-    const subject = `[TechFlow Lead] ${lead.projectType} - Budget: ${lead.budget}`;
+    const subject = `[TechFlow Lead] ${lead.projectType} - Budget: ${lead.budget}${lead.source ? ` (${lead.source})` : ""}`;
 
     // Construire le corps (texte brut)
     const text = [
@@ -109,6 +109,9 @@ export default async function handler(
       ``,
       `--- Message ---`,
       lead.message,
+      ``,
+      `--- Tracking ---`,
+      `Source: ${lead.source || "direct"}`,
       ``,
       `--- Info Technique ---`,
       `Request ID: ${requestId}`,

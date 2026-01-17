@@ -1,3 +1,11 @@
+/**
+ * i18n Configuration
+ * Currently disabled - i18next not installed
+ * TODO: Install i18next, react-i18next, i18next-browser-languagedetector
+ * Then uncomment the code below and use with LanguageSwitcher component
+ */
+
+/*
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -45,3 +53,7 @@ i18n
   });
 
 export default i18n;
+*/
+
+// Empty export to prevent errors
+export {};
