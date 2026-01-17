@@ -1,9 +1,12 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
+import Privacy from "@/pages/Privacy";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { useEffect } from "react";
+import { initScrollDepthTracking } from "@/lib/analytics";
 import Home from "./pages/Home";
 import Method from "./pages/Method";
 import About from "./pages/About";
@@ -29,6 +32,7 @@ function Router() {
       <Route path={"/about"} component={About} />
       <Route path={"/services"} component={Services} />
       <Route path={"/contact"} component={Contact} />
+      <Route path={"/privacy"} component={Privacy} />
       <Route path="/confirmation" component={Confirmation} />
       <Route path="/legal" component={Legal} />
       <Route path={"/results"} component={Results} />
@@ -46,12 +50,13 @@ function Router() {
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
+  // Initialiser le tracking scroll depth
+  useEffect(() => {
+    const cleanup = initScrollDepthTracking();
+    return cleanup;
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider

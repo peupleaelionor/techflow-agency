@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import Link from "next/link";
+import { Link } from "wouter";
 import Container from "./Container";
 import { Reveal } from "./Reveal";
 

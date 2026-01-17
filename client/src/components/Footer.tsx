@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "wouter";
 import { Mail, Twitter, Instagram, Music } from "lucide-react";
 import Container from "./Container";
 

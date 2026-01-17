@@ -2,7 +2,7 @@ import { useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
+import { Link } from "wouter";
 import ThemeToggle from "./ThemeToggle";
 import Container from "./Container";
 

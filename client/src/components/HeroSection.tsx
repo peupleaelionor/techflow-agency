@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "wouter";
 import { MessageCircle } from "lucide-react";
 import { Reveal } from "./Reveal";
 import Container from "./Container";
