@@ -1,0 +1,52 @@
+<svg width="100%" height="auto" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <title>Illustration : Portée clients internationale</title>
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066FF;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00C8FF;stop-opacity:0.15" />
+    </linearGradient>
+    <style>
+      .map-continent { stroke: #0066FF; stroke-width: 1; fill: url(#mapGradient); }
+      .glow-point { fill: #00C8FF; filter: url(#glow); }
+    </style>
+  </defs>
+  
+  <!-- Fond subtil -->
+  <rect width="200" height="120" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Planisphère minimaliste (contours schématiques) -->
+  
+  <!-- Afrique -->
+  <path d="M 95 35 L 105 35 L 108 50 L 105 65 L 95 70 L 92 55 Z" class="map-continent" />
+  
+  <!-- Europe -->
+  <path d="M 85 25 L 100 25 L 102 40 L 95 42 L 88 35 Z" class="map-continent" />
+  
+  <!-- Asie (très simplifié) -->
+  <path d="M 110 25 L 140 30 L 145 50 L 135 55 L 115 45 Z" class="map-continent" />
+  
+  <!-- Amérique du Nord -->
+  <path d="M 25 20 L 45 20 L 48 40 L 40 50 L 22 45 Z" class="map-continent" />
+  
+  <!-- Amérique du Sud -->
+  <path d="M 35 48 L 48 48 L 50 75 L 40 80 L 32 75 Z" class="map-continent" />
+  
+  <!-- Points lumineux - Paris -->
+  <circle cx="92" cy="32" r="3.5" class="glow-point" />
+  <text x="92" y="48" text-anchor="middle" font-size="10" font-weight="600" fill="#0066FF" opacity="0.8">Paris</text>
+  
+  <!-- Points lumineux - New York -->
+  <circle cx="35" cy="38" r="3.5" class="glow-point" />
+  <text x="35" y="54" text-anchor="middle" font-size="10" font-weight="600" fill="#0066FF" opacity="0.8">New York</text>
+  
+  <!-- Points lumineux - Londres -->
+  <circle cx="82" cy="28" r="3.5" class="glow-point" />
+  <text x="82" y="14" text-anchor="middle" font-size="10" font-weight="600" fill="#0066FF" opacity="0.8">Londres</text>
+</svg>

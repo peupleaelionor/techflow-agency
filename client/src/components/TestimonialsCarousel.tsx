@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { testimonials, testimonialStats } from "@/data/testimonialsData";
 import { Reveal } from "@/components/Reveal";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import SvgIcon from "@/components/SvgIcon";
 
 export default function TestimonialsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -139,7 +140,9 @@ export default function TestimonialsCarousel() {
                 key={index}
                 className="border-2 border-[#CCFF00] p-6 text-center bg-gray-900 hover:bg-black transition-all"
               >
-                <div className="text-4xl mb-3">{stat.icon}</div>
+                <div className="flex justify-center mb-3">
+                  <SvgIcon type={stat.icon} size={48} />
+                </div>
                 <div className="text-2xl font-black text-[#CCFF00] mb-2">
                   {stat.value}
                 </div>

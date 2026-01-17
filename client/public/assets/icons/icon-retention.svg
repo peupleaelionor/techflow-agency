@@ -1,0 +1,16 @@
+<svg width="100%" height="auto" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <title>Icône : Rétention et Fidélité</title>
+  <defs>
+    <style>
+      .shield-stroke { stroke: #0066FF; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .shield-fill { fill: #0066FF; }
+      .checkmark { stroke: #0066FF; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+  
+  <!-- Bouclier stylisé -->
+  <path d="M 32 12 L 18 18 L 18 32 Q 18 42 32 50 Q 46 42 46 32 L 46 18 Z" class="shield-stroke" />
+  
+  <!-- Checkmark à l'intérieur du bouclier -->
+  <path d="M 26 32 L 30 36 L 38 26" class="checkmark" />
+</svg>

@@ -1,0 +1,24 @@
+<svg width="100%" height="auto" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <title>Icône : Clients satisfaits</title>
+  <defs>
+    <style>
+      .icon-stroke { stroke: #0066FF; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .icon-accent { fill: #0066FF; }
+    </style>
+  </defs>
+  
+  <!-- Silhouette 1 (centre, légèrement avancée) -->
+  <circle cx="32" cy="18" r="5" class="icon-accent" />
+  <path d="M 32 24 Q 32 28 28 30 L 28 40 M 32 24 Q 32 28 36 30 L 36 40 M 28 30 L 26 38 M 36 30 L 38 38" class="icon-stroke" />
+  
+  <!-- Silhouette 2 (gauche) -->
+  <circle cx="18" cy="20" r="4.5" class="icon-accent" />
+  <path d="M 18 25 Q 18 28 15 30 L 15 40 M 18 25 Q 18 28 21 30 L 21 40 M 15 30 L 13 38 M 21 30 L 23 38" class="icon-stroke" />
+  
+  <!-- Silhouette 3 (droite) -->
+  <circle cx="46" cy="20" r="4.5" class="icon-accent" />
+  <path d="M 46 25 Q 46 28 43 30 L 43 40 M 46 25 Q 46 28 49 30 L 49 40 M 43 30 L 41 38 M 49 30 L 51 38" class="icon-stroke" />
+  
+  <!-- Arc reliant les 3 silhouettes (bas) -->
+  <path d="M 14 42 Q 32 46 50 42" class="icon-stroke" />
+</svg>

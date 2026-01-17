@@ -11,6 +11,12 @@ export interface Testimonial {
   industry: string;
 }
 
+export interface TestimonialStat {
+  label: string;
+  value: string;
+  icon: 'clients' | 'growth' | 'retention';
+}
+
 export const testimonials: Testimonial[] = [
   {
     id: "testimonial-1",
@@ -86,9 +92,9 @@ export const testimonials: Testimonial[] = [
   }
 ];
 
-export const testimonialStats = [
-  { label: "Clients satisfaits", value: "200+", icon: "👥" },
-  { label: "Croissance moyenne", value: "+127%", icon: "📊" },
-  { label: "Taux de rétention", value: "98%", icon: "⭐" },
-  { label: "Projets livrés", value: "500+", icon: "✨" }
+export const testimonialStats: TestimonialStat[] = [
+  { label: "Clients satisfaits", value: "200+", icon: "clients" },
+  { label: "Croissance moyenne", value: "+127%", icon: "growth" },
+  { label: "Taux de rétention", value: "98%", icon: "retention" },
+  { label: "Projets livrés", value: "500+", icon: "retention" }
 ];
