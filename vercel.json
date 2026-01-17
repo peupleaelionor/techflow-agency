@@ -1,21 +1,15 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "builds": [
-    {
-      "src": "dist/public/**",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
       "src": "^/(?!.*\\.(js|css|svg|png|jpg|jpeg|gif|ico|json|xml|txt|woff|woff2|ttf|eot)$).*$",
-      "destination": "/index.html"
+      "dest": "/index.html"
     },
     {
       "src": "/(.*)",
       "status": 404,
-      "destination": "/404.html"
+      "dest": "/404.html"
     }
   ],
   "headers": [
