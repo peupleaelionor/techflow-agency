@@ -8,6 +8,7 @@ export const ROUTES = {
   portfolio: "/portfolio",
   contact: "/contact",
   privacy: "/privacy",
+  monitoring: "/monitoring", // Route secrète pour debug
 } as const;
 
 export const ANCHORS = {
@@ -18,3 +19,4 @@ export const ANCHORS = {
 // Types pour typage strict
 export type RouteKey = keyof typeof ROUTES;
 export type AnchorKey = keyof typeof ANCHORS;
+

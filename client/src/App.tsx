@@ -22,6 +22,7 @@ import Insights from "./pages/Insights";
 import InsightDetail from "./pages/InsightDetail";
 import ContentCalendar from "./pages/ContentCalendar";
 import Portfolio from "./pages/Portfolio";
+import Monitoring from "./pages/Monitoring";
 
 
 function Router() {
@@ -43,6 +44,7 @@ function Router() {
       <Route path={"/insights/:id"} component={InsightDetail} />
       <Route path={"/content-calendar"} component={ContentCalendar} />
       <Route path={"/portfolio"} component={Portfolio} />
+      <Route path={"/monitoring"} component={Monitoring} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
